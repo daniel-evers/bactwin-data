@@ -1,0 +1,18 @@
+base: analog-input
+name: AI_MW_LTF_AMEV1
+uuid: 14a47d97-ef24-4ff2-a394-e0047149b373
+order: a137
+application: Leitfähigkeit Messwert
+comment: Leitfähigkeit
+properties:
+  units: S/m
+  cov-increment:
+    content: 0.1
+    suggestion: true
+  time-delay: 60
+  notification-class: 300
+  low-limit: null
+  high-limit: null
+  deadband: null
+  limit-enable: f,f
+  event-enable: f,t,t

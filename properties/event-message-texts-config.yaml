@@ -1,0 +1,10 @@
+base: default
+name: Event_Message_Texts_Config
+order: c14
+conformance: W
+specification: B
+detailing: P
+implementation: U
+preset: true
+content: '***'
+suggestion: false

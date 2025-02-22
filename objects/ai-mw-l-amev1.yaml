@@ -1,0 +1,26 @@
+base: analog-input
+name: AI_MW_L_AMEV1
+uuid: ef55d7b8-8592-4705-8401-774c060d4164
+order: a133
+application: Füllstand Messwert
+comment: Fühler Füllstand (Level)
+properties:
+  units:
+    content: "%"
+    suggestion: true
+  cov-increment:
+    content: 0.5
+    suggestion: true
+  time-delay: 3600
+  notification-class: 300
+  low-limit:
+    content: 20
+    suggestion: true
+  high-limit:
+    content: 100
+    suggestion: true
+  deadband:
+    content: 1
+    suggestion: true
+  limit-enable: t,t
+  event-enable: t,t,t

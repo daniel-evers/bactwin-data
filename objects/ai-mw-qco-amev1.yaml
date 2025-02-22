@@ -1,0 +1,22 @@
+base: analog-input
+name: AI_MW_QCO_AMEV1
+uuid: 53735a65-bd13-4a65-be6d-9d62908c3222
+order: a128
+application: CO Messwert
+comment: Fühler CO Kohlenmonoxid
+properties:
+  units: ppm
+  cov-increment:
+    content: 1
+    suggestion: true
+  time-delay: 3600
+  notification-class: 200
+  low-limit:
+    content: 0
+    suggestion: true
+  high-limit:
+    content: 30
+    suggestion: true
+  deadband: 1
+  limit-enable: t,t
+  event-enable: t,t,t

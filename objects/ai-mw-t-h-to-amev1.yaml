@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_H_TO_AMEV1
+uuid: 0bf4a0f5-bc4d-429b-b275-da552667d731
+order: a106
+application: Temperatur Messwert
+comment: Fühler Temperatur Thermo-Öl
+properties:
+  units: °C
+  cov-increment: 3
+  time-delay: 1
+  notification-class: 300
+  low-limit:
+    content: 0
+    suggestion: true
+  high-limit:
+    content: 300
+    suggestion: true
+  deadband: 3
+  limit-enable: t,t
+  event-enable: t,t,t

@@ -1,0 +1,22 @@
+base: analog-input
+name: AI_MW_P_GAS_AMEV1
+uuid: 2fa98944-1523-4d24-b54f-5ad56518f119
+order: a119
+application: Druck Messwert
+comment: Fühler Druck Gas (z.B. Erdgas, techn. Gase)
+properties:
+  units: mbar
+  cov-increment: festlegen
+  time-delay: festlegen
+  notification-class: 300
+  low-limit:
+    content: festlegen
+    suggestion: true
+  high-limit:
+    content: festlegen
+    suggestion: true
+  deadband:
+    content: festlegen
+    suggestion: true
+  limit-enable: festlegen
+  event-enable: t,t,t

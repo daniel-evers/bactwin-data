@@ -1,0 +1,10 @@
+base: default
+name: Event_Algorithm_Inhibit_Ref
+order: c42
+conformance: RA
+specification: P
+detailing: P
+implementation: U
+preset: false
+content: ~
+suggestion: false

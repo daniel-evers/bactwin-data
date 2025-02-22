@@ -1,0 +1,12 @@
+base: ~
+name: ~
+uuid: ~
+order: ~
+application: ~
+comment: ~
+functions: ~
+properties:
+  object-name: 'BAS'
+  #- description: ~
+  #- object-type: ~
+  #- object-identifier: ~

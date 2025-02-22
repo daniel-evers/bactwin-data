@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_P_Tem_AMEV1
+uuid: 063cbe52-fcf7-4c05-8ac5-c61e10a26ef1
+order: a122
+application: Druck Messwert
+comment: Fühler Druck 0-10bar Heizung
+properties:
+  units: bar
+  cov-increment: 0.1
+  time-delay: 30
+  notification-class: 300
+  low-limit:
+    content: 1.5
+    suggestion: true
+  high-limit:
+    content: 5
+    suggestion: true
+  deadband: 0.1
+  limit-enable: t,t
+  event-enable: t,t,t

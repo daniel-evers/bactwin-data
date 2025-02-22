@@ -1,0 +1,10 @@
+base: any
+name: Min_Pres_Value
+order: c45
+conformance: R
+specification: P
+detailing: P
+implementation: U
+preset: false
+content: ~
+suggestion: false

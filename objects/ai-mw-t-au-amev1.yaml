@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_AU_AMEV1
+uuid: e2dbfb8e-1c50-4955-a2ac-ce277690d32a
+order: a102
+application: Temperatur Messwert
+comment: Temperatur Außen
+properties:
+  units: °C
+  cov-increment: 0.2
+  time-delay: 120
+  notification-class: 300
+  low-limit:
+    content: "-20"
+    suggestion: true
+  high-limit:
+    content: 40
+    suggestion: true
+  deadband: 0.2
+  limit-enable: t,t
+  event-enable: t,t,t

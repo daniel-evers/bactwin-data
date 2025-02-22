@@ -1,0 +1,10 @@
+base: default
+name: Resolution
+order: c41
+conformance: R
+specification: P
+detailing: P
+implementation: U
+preset: false
+content: ~
+suggestion: false

@@ -1,0 +1,22 @@
+base: analog-input
+name: AI_MW_P_GM_AMEV1
+uuid: a91696d3-f510-49ff-8e26-a74b81b1f383
+order: a120
+application: Druck Messwert
+comment: Fühler Druck Gas Gefahrmeldung (siehe NC100)
+properties:
+  units: mbar
+  cov-increment: festlegen
+  time-delay: festlegen
+  notification-class: 100
+  low-limit:
+    content: festlegen
+    suggestion: true
+  high-limit:
+    content: festlegen
+    suggestion: true
+  deadband:
+    content: festlegen
+    suggestion: true
+  limit-enable: festlegen
+  event-enable: t,t,t

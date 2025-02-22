@@ -1,0 +1,10 @@
+base: system
+name: Event_Message_Texts
+order: ~
+conformance: R
+specification: ~
+detailing: ~
+implementation: ~
+preset: false
+content: '*'
+suggestion: false

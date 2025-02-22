@@ -1,0 +1,10 @@
+base: default
+name: Notify_Type
+order: c13
+conformance: W
+specification: B
+detailing: P
+implementation: U
+preset: true
+content: alarm
+suggestion: false

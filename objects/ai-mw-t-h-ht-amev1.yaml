@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_H_HT_AMEV1
+uuid: e09e423a-dc58-4a00-aa68-605ff5a723f3
+order: a104
+application: Temperatur Messwert
+comment: Heizung Hochtemperatur
+properties:
+  units: °C
+  cov-increment: 1
+  time-delay: 1
+  notification-class: 300
+  low-limit:
+    content: 10
+    suggestion: true
+  high-limit:
+    content: 90
+    suggestion: true
+  deadband: 1
+  limit-enable: t,t
+  event-enable: t,t,t

@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_H_WW_AMEV1
+uuid: 0f891ba8-b1fa-4a0c-839b-8835d5cedef6
+order: a107
+application: Temperatur Messwert
+comment: Fühler Temperatur Warmwasser
+properties:
+  units: °C
+  cov-increment: 1
+  time-delay: 60
+  notification-class: 300
+  low-limit:
+    content: 55
+    suggestion: true
+  high-limit:
+    content: 75
+    suggestion: true
+  deadband: 1
+  limit-enable: t,t
+  event-enable: t,t,t

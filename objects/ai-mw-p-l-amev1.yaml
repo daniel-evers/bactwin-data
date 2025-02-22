@@ -1,0 +1,24 @@
+base: analog-input
+name: AI_MW_P_L_AMEV1
+uuid: 5fa7e6c7-9fdc-404e-aa3e-6417d5b9e94c
+order: a121
+application: Druck Messwert
+comment: Fühler Druck 0-1000Pa Lüftung
+properties:
+  units: Pa
+  cov-increment:
+    content: 30
+    suggestion: true
+  time-delay: 120
+  notification-class: 300
+  low-limit:
+    content: 0
+    suggestion: true
+  high-limit:
+    content: 500
+    suggestion: true
+  deadband:
+    content: 30
+    suggestion: true
+  limit-enable: t,t
+  event-enable: t,t,t

@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_AMEV1
+uuid: eaaa2766-7799-4761-9f2e-4b78d1135816
+order: a101
+application: Temperatur Messwert
+comment: Temperatur
+properties:
+  units: °C
+  cov-increment: "> 0"
+  time-delay: "> 0"
+  notification-class: festlegen
+  low-limit:
+    content: festlegen
+    suggestion: true
+  high-limit:
+    content: festlegen
+    suggestion: true
+  deadband: festlegen
+  limit-enable: festlegen
+  event-enable: t,t,t

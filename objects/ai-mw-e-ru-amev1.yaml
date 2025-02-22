@@ -1,0 +1,18 @@
+base: analog-input
+name: AI_MW_E_RU_AMEV1
+uuid: d9d0c12a-b62a-4162-8a40-fd93b517bbb9
+order: a130
+application: Beleuchtungsstärke Messwert
+comment: Fühler Beleuchtungsstärke Raum
+properties:
+  units: lx
+  cov-increment: 50
+  time-delay: 3600
+  notification-class: 300
+  low-limit: 0
+  high-limit:
+    content: 1000
+    suggestion: true
+  deadband: 50
+  limit-enable: t,t
+  event-enable: t,t,t

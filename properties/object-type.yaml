@@ -1,0 +1,10 @@
+base: any
+name: Object_Type
+order: a13
+conformance: R
+specification: ~
+detailing: ~
+implementation: ~
+preset: false
+content: true
+suggestion: false

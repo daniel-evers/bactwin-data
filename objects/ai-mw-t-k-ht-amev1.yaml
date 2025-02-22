@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_K_HT_AMEV1
+uuid: 718ad974-af2f-4146-96d6-bea00ea74ada
+order: a112
+application: Temperatur Messwert
+comment: Fühler Temperatur Kälte Hochtemperatur
+properties:
+  units: °C
+  cov-increment: 0.1
+  time-delay: 60
+  notification-class: 300
+  low-limit:
+    content: 12
+    suggestion: true
+  high-limit:
+    content: 22
+    suggestion: true
+  deadband: 0.1
+  limit-enable: t,t
+  event-enable: t,t,t

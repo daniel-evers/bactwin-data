@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_L_TP_AMEV1
+uuid: 6bbad302-e8f7-4a84-b51c-3e87218c052a
+order: a110
+application: Temperatur Messwert
+comment: Fühler Temperatur Taupunkt
+properties:
+  units: °C
+  cov-increment: 0.1
+  time-delay: 60
+  notification-class: 300
+  low-limit:
+    content: 10
+    suggestion: true
+  high-limit:
+    content: 20
+    suggestion: true
+  deadband: 0.1
+  limit-enable: t,t
+  event-enable: t,t,t

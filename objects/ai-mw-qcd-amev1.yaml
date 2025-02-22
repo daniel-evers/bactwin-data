@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_QCD_AMEV1
+uuid: 862891c7-7141-40fa-aec2-a39790b15134
+order: a127
+application: CO2 Messwert
+comment: Fühler CO2 Kohlendioxid
+properties:
+  units: ppm
+  cov-increment: 50
+  time-delay: 3600
+  notification-class: 300
+  low-limit:
+    content: 400
+    suggestion: true
+  high-limit:
+    content: 1200
+    suggestion: true
+  deadband: 50
+  limit-enable: t,t
+  event-enable: t,t,t

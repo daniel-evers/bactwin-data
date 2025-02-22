@@ -1,0 +1,16 @@
+base: analog-input
+name: AI_MW_E_AU_AMEV1
+uuid: f46a9485-9ca6-4280-8f39-afd9551ad445
+order: a131
+application: Beleuchtungsstärke Messwert
+comment: Fühler Beleuchtungsstärke Außen
+properties:
+  units: lx
+  cov-increment: 50
+  time-delay: 3600
+  notification-class: 300
+  low-limit: null
+  high-limit: null
+  deadband: null
+  limit-enable: f,f
+  event-enable: f,t,t

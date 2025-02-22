@@ -1,0 +1,10 @@
+base: default
+name: Time_Delay
+order: c43
+conformance: W
+specification: P
+detailing: P
+implementation: U
+preset: true
+content: '>0'
+suggestion: false

@@ -1,0 +1,24 @@
+base: analog-input
+name: AI_MW_QPH_AMEV1
+uuid: c74b246d-5eaf-45cd-92c7-f6807bb391e1
+order: a129
+application: PH Messwert
+comment: Fühler Leitfähigkeit
+properties:
+  units: pH
+  cov-increment:
+    content: 0.1
+    suggestion: true
+  time-delay: 3600
+  notification-class: 300
+  low-limit:
+    content: 6
+    suggestion: true
+  high-limit:
+    content: 8
+    suggestion: true
+  deadband:
+    content: 0.1
+    suggestion: true
+  limit-enable: t,t
+  event-enable: t,t,t

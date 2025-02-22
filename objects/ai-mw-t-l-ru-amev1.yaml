@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_L_RU_AMEV1
+uuid: c84dd10b-0288-4196-b919-1e9c9d9bd04f
+order: a109
+application: Temperatur Messwert
+comment: Fühler Temperatur Lüftung Raum
+properties:
+  units: °C
+  cov-increment: 0.5
+  time-delay: 60
+  notification-class: 300
+  low-limit:
+    content: 5
+    suggestion: true
+  high-limit:
+    content: 40
+    suggestion: true
+  deadband: 0.5
+  limit-enable: t,t
+  event-enable: t,t,t

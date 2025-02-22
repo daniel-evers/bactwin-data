@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_SW_J_AMEV1
+uuid: bd849768-c7e4-4d4c-8a99-ab5942a2bfb2
+order: a138
+application: Leistung Sollwert
+comment: Sollwert Leistung (Einspeisung)
+properties:
+  units: "%"
+  cov-increment: festlegen
+  time-delay: festlegen
+  notification-class: 300
+  low-limit:
+    content: festlegen
+    suggestion: true
+  high-limit:
+    content: festlegen
+    suggestion: true
+  deadband: null
+  limit-enable: festlegen
+  event-enable: t,t,t

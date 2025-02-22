@@ -1,0 +1,9 @@
+base: system
+name: Event_Time_Stamps
+order: ~
+conformance: R
+specification: ~
+detailing: ~
+implementation: ~
+preset: false
+content: '*'

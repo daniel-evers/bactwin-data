@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_M_L_RU_AMEV1
+uuid: 58a3cfc8-1796-4d99-9fa6-78f30119deb1
+order: a116
+application: Feuchte relativ Messwert
+comment: Fühler Feuchte 0-100% r.F.Raum
+properties:
+  units: "%r.F."
+  cov-increment: 3
+  time-delay: 240
+  notification-class: 300
+  low-limit:
+    content: 30
+    suggestion: true
+  high-limit:
+    content: 70
+    suggestion: true
+  deadband: 3
+  limit-enable: t,t
+  event-enable: t,t,t

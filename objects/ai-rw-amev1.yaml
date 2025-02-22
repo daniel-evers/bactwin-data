@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_RW_AMEV1
+uuid: 0f3b5b89-35fb-4100-b47d-2678f1a01963
+order: a134
+application: Rückführwert
+comment: Rückführwert
+properties:
+  units: "%"
+  cov-increment: 3
+  time-delay: 60
+  notification-class: 300
+  low-limit:
+    content: 0
+    suggestion: true
+  high-limit:
+    content: 100
+    suggestion: true
+  deadband: 3
+  limit-enable: f,f
+  event-enable: f,t,t

@@ -1,0 +1,10 @@
+base: default
+name: Deadband
+order: c50
+conformance: W
+specification: P
+detailing: P
+implementation: U
+preset: true
+content: true
+suggestion: false

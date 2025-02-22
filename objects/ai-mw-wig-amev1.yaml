@@ -1,0 +1,16 @@
+base: analog-input
+name: AI_MW_WIG_AMEV1
+uuid: 894896d3-a42d-46ae-88ac-d1f9ab231be2
+order: a135
+application: Windgeschwindigkeit Messwert
+comment: Fühler thermisches Anemometer/Sternanemometer
+properties:
+  units: m/s
+  cov-increment: 0.1
+  time-delay: 60
+  notification-class: 300
+  low-limit: null
+  high-limit: null
+  deadband: null
+  limit-enable: f,f
+  event-enable: f,t,t

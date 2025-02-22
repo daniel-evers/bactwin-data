@@ -1,0 +1,34 @@
+base: any
+functions:
+  1.1.1: true
+  2.2.1: true
+  3.1.1: true
+  3.1.3: 9
+properties:
+  status-flags: 'f,f,f,f'
+  event-state: 0
+  reliability: 0
+  out-of-service: f
+  units: ~
+  min-pres-value: ~
+  max-pres-value: ~
+  resolution: ~
+  cov-increment: ~
+  time-delay: ~
+  notification-class: ~
+  low-limit:
+    suggestion: true
+  high-limit:
+    suggestion: true
+  deadband: ~
+  limit-enable: 't,t'
+  event-enable: 't,t,t'
+  notify-type: alarm
+  event-time-stamps: '*'
+  event-message-texts: '*'
+  event-message-texts-config: '***'
+  event-detection-enable: t
+  event-algorithm-inhibit: ~
+  event-algorithm-inhibit-ref: ~
+  time-delay-normal: 1
+  reliability-evaluation-inhibit: ~

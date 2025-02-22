@@ -1,0 +1,21 @@
+{
+    "name": "bactwin-data",
+    "version": "1.0.0",
+    "description": "AMEV BACtwin data in an IT-optimized format",
+    "scripts": {
+        "compile": "node ./scripts/compile",
+        "create": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/create-workbook.ps1"
+    },
+    "type": "module",
+    "keywords": [
+        "amev",
+        "bacnet",
+        "bactwin"
+    ],
+    "author": "Daniel Evers",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "deepmerge": "^4.3.1",
+        "yaml": "^2.7.0"
+    }
+}

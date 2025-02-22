@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_H_AG_AMEV1
+uuid: 2aeebe4e-219a-49ac-bfef-32e7c0a4c92a
+order: a108
+application: Temperatur Messwert
+comment: Fühler Temperatur Abgas
+properties:
+  units: °C
+  cov-increment: 10
+  time-delay: 1
+  notification-class: 300
+  low-limit:
+    content: "-20"
+    suggestion: true
+  high-limit:
+    content: 1300
+    suggestion: true
+  deadband: 10
+  limit-enable: t,t
+  event-enable: t,t,t

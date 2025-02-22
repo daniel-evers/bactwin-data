@@ -1,0 +1,10 @@
+base: default
+name: High_Limit
+order: c48
+conformance: W
+specification: P
+detailing: P
+implementation: U
+preset: true
+content: true
+suggestion: false

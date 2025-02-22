@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_T_K_KW_AMEV1
+uuid: b3817b71-21f4-4bfe-9a74-a37195f8dc96
+order: a113
+application: Temperatur Messwert
+comment: Fühler Temperatur Kaltwasser
+properties:
+  units: °C
+  cov-increment: 0.5
+  time-delay: 60
+  notification-class: 300
+  low-limit:
+    content: "-20"
+    suggestion: true
+  high-limit:
+    content: 45
+    suggestion: true
+  deadband: 0.5
+  limit-enable: t,t
+  event-enable: t,t,t

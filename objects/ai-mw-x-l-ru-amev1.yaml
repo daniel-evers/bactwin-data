@@ -1,0 +1,20 @@
+base: analog-input
+name: AI_MW_X_L_RU_AMEV1
+uuid: c2767d39-1a7a-4f31-8158-1065f295e22b
+order: a114
+application: Feuchte absolut Messwert
+comment: Fühler Feuchte absolut Raum
+properties:
+  units: g/m³
+  cov-increment: 0.1
+  time-delay: 240
+  notification-class: 300
+  low-limit:
+    content: 4
+    suggestion: true
+  high-limit:
+    content: 11.5
+    suggestion: true
+  deadband: 0.1
+  limit-enable: t,t
+  event-enable: t,t,t

@@ -1,0 +1,9 @@
+base: system
+name: Status_Flags
+order: ~
+conformance: R
+specification: ~
+detailing: ~
+implementation: ~
+preset: false
+content: 'f,f,f,f'

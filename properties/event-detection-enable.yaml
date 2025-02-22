@@ -1,0 +1,10 @@
+base: default
+name: Event_Detection_Enable
+order: c15
+conformance: W
+specification: B
+detailing: P
+implementation: U
+preset: true
+content: t
+suggestion: false

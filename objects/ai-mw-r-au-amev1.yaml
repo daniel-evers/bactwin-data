@@ -1,0 +1,16 @@
+base: analog-input
+name: AI_MW_R_AU_AMEV1
+uuid: d8968258-1895-4231-8956-6738f46688c4
+order: a132
+application: Globalstrahlung Messwert
+comment: Fühler Globalstrahlung Außen
+properties:
+  units: W/m²
+  cov-increment: 50
+  time-delay: 3600
+  notification-class: 300
+  low-limit: null
+  high-limit: null
+  deadband: null
+  limit-enable: f,f
+  event-enable: f,t,t

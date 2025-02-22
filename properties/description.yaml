@@ -1,0 +1,10 @@
+base: default
+name: Description
+order: a12
+conformance: O
+specification: B
+detailing: P
+implementation: U
+preset: false
+content: ~
+suggestion: false
