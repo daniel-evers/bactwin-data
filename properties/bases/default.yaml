@@ -1,2 +1,8 @@
-base: any
+base: ~
+name: ~
+order: ~
 conformance: W
+duty: B-P-U
+preset: true
+content: ~
+suggestion: false

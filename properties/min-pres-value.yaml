@@ -1,4 +1,4 @@
-base: any
+base: default
 name: Min_Pres_Value
 order: c45
 conformance: R

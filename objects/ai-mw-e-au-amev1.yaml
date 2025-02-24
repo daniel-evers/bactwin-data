@@ -4,6 +4,8 @@ uuid: f46a9485-9ca6-4280-8f39-afd9551ad445
 order: a131
 application: Beleuchtungsstärke Messwert
 comment: Fühler Beleuchtungsstärke Außen
+functions:
+  2.2.1: false
 properties:
   units: lx
   cov-increment: 50

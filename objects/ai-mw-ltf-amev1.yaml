@@ -4,6 +4,8 @@ uuid: 14a47d97-ef24-4ff2-a394-e0047149b373
 order: a137
 application: Leitfähigkeit Messwert
 comment: Leitfähigkeit
+functions:
+  2.2.1: false
 properties:
   units: S/m
   cov-increment:

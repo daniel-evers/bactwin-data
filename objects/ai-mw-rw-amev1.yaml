@@ -4,6 +4,8 @@ uuid: 32295474-6ba0-497e-8121-d779093ab883
 order: a136
 application: Leistung Rückführwert
 comment: Leistungsrückmeldung
+functions:
+  2.2.1: false
 properties:
   units: "%"
   cov-increment: 3

@@ -1,4 +1,4 @@
-base: any
+base: default
 order: c46
 conformance: R
 specification: P

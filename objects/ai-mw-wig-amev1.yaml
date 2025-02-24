@@ -4,6 +4,8 @@ uuid: 894896d3-a42d-46ae-88ac-d1f9ab231be2
 order: a135
 application: Windgeschwindigkeit Messwert
 comment: Fühler thermisches Anemometer/Sternanemometer
+functions:
+  2.2.1: false
 properties:
   units: m/s
   cov-increment: 0.1

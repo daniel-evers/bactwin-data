@@ -67,7 +67,7 @@ export class BactwinDefinitions {
             if (sourceBases.has(base)) {
                 expandedBase = this.#expandBase(base, sourceBases.get(base), sourceBases, expandedBases)
             }
-            else if (name === 'any' && base === null) {
+            else if (name === 'default' && base === null) {
                 expandedBase = {}
             }
             else {

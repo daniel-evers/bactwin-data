@@ -1,4 +1,4 @@
-base: any
+base: default
 name: Reliability_Evaluation_Inhibit
 order: ~
 conformance: Rx|O

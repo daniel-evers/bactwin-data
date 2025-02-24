@@ -4,6 +4,8 @@ uuid: 075de54e-3d27-47c5-93d5-d49f53d9a47a
 order: a117
 application: Feuchte relativ Messwert
 comment: Fühler Feuchte 0-100% r.F.Außen
+functions:
+  2.2.1: false
 properties:
   units: "%r.F."
   cov-increment: 3

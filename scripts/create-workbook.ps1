@@ -62,9 +62,15 @@ $first = $true
 
 # output all available templates
 foreach ($item in $json.PSObject.Properties) {
+
+    # process only analog input templates
+    $object = $item.Value
+    if (-not $object.name.StartsWith("AI_")) {
+        continue
+    }
+
     $row++
     $column = 1
-    $object = $item.Value
 
     # set common values
     Set-Cell $row ($column++) $object.order
@@ -76,11 +82,12 @@ foreach ($item in $json.PSObject.Properties) {
     # make and set BA function list values
     $functions = ''
     foreach ($function in $object.functions.PSObject.Properties) {
-        if ($functions.Length -gt 0) {
-            $functions += "; "
+        if ($false -ne $function.Value) {
+            if ($functions.Length -gt 0) {
+                $functions += "; "
+            }
+            $functions += $function.Name
         }
-        $functions += $function.Name
-
         $value = $function.Value
         if ($true -eq $function.Value) {
             $value = '✓'

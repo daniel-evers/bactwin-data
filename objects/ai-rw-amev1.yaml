@@ -4,6 +4,8 @@ uuid: 0f3b5b89-35fb-4100-b47d-2678f1a01963
 order: a134
 application: Rückführwert
 comment: Rückführwert
+functions:
+  2.2.1: false
 properties:
   units: "%"
   cov-increment: 3

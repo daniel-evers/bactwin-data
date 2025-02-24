@@ -1,4 +1,4 @@
-base: any
+base: default
 conformance: R
 duty: --U
 preset: false

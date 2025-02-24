@@ -4,6 +4,8 @@ uuid: d8968258-1895-4231-8956-6738f46688c4
 order: a132
 application: Globalstrahlung Messwert
 comment: Fühler Globalstrahlung Außen
+functions:
+  2.2.1: false
 properties:
   units: W/m²
   cov-increment: 50

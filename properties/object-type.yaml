@@ -1,4 +1,4 @@
-base: any
+base: default
 name: Object_Type
 order: a13
 conformance: R
