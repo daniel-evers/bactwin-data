@@ -76,7 +76,7 @@ foreach ($item in $json.PSObject.Properties) {
     Set-Cell $row ($column++) $object.order
     Set-Cell $row ($column++) $object.uuid
     Set-Cell $row ($column++) $object.name
-    Set-Cell $row ($column++) $item.application
+    Set-Cell $row ($column++) $object.application
     Set-Cell $row ($column++) $object.comment
 
     # make and set BA function list values
@@ -112,17 +112,15 @@ foreach ($item in $json.PSObject.Properties) {
             Set-Cell 4 $column $duties[0] (0 -eq $duties[0].Length ? 0 : 43)
             Set-Cell 5 $column $duties[1] (0 -eq $duties[1].Length ? 0 : 43)
             Set-Cell 6 $column $duties[2] 43
-            Set-Cell 7 $column ($property.Value.preset ? '!' : '?')
             if ($property.Value.preset) {
-                $worksheet.Cells(7, $column).Interior.ColorIndex = 44
+                Set-Cell 7 $column '!' 44
             }
             elseif ($null -ne $property.Value.content) {
-                $worksheet.Cells(7, $column).Value = '?'
-                $worksheet.Cells(7, $column).Interior.ColorIndex = 42
+                Set-Cell 7 $column '?' 42
             }
         }
 
-        # ignire empty values
+        # ignore empty values
         if ($null -eq $property.Value.content) {
             $column++
             continue
