@@ -10,6 +10,20 @@ Currently, the definitions are converted from a [YAML](https://yaml.org/) format
 
 For the moment, only the object templates of the object type analog input and its properties are taken into account.
 
+# Getting Started
+
+1. Ensure that the following programs are installed on your system in their latest, stable version.
+    * [Powershell](https://docs.microsoft.com/en-us/powershell)
+    * [Node.js](https://nodejs.org)
+    * [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
+    * [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (recommended)
+    * [Git](https://git-scm.com) (recommended)
+2. Create a working copy of this project if not already done.
+    * With Git you can just do it by running `git clone https://github.com/daniel-evers/bactwin-data`
+3. Run `npm install` inside of your working copy.
+    * Run `npm run compile` to re-create the files of the `compilation` directory. (optional)
+    * Run `npm run create` to create an example Excel workbook. (optional)
+
 # License
 
 Unless otherwise noted, this project is licensed under the permissive [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license. Further information can be found in the [NOTICE](./NOTICE) file.
