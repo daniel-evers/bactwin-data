@@ -12,4 +12,4 @@ For the moment, only the object templates of the object type analog input and it
 
 # License
 
-Unless otherwise noted, this project is licensed under the permissive [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
+Unless otherwise noted, this project is licensed under the permissive [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license. Further information can be found in the [NOTICE](./NOTICE) file.

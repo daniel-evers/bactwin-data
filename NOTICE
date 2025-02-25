@@ -1,0 +1,11 @@
+# Project BACtwin data
+
+The origin of this project is https://github.com/daniel-evers/bactwin-data.
+
+The directories `compilation`, `objects` and `properties` contain files with information from the [AMEV BACtwin](https://www.amev-online.de/AMEVInhalt/Planen/Gebaeudeautomation/BACtwin) recommendation. At the time of this writing, that information was publicly and freely available and usable for everyone.
+
+All other contents, especially those in the `scripts` folder, are licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license unless otherwise noted.
+
+Any contribution to this project is subject to the Apache 2.0 license. The following participants have accepted this and participated in the order of their first contribution.
+
+- [Daniel Evers](https://github.com/daniel-evers)
