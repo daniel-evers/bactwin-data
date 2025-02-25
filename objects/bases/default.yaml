@@ -6,7 +6,4 @@ application: ~
 comment: ~
 functions: ~
 properties:
-  object-name: 'BAS'
-  #- description: ~
-  #- object-type: ~
-  #- object-identifier: ~
+  object-name: ~

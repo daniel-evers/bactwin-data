@@ -247,7 +247,7 @@
         "conformance": "R",
         "duty": "B-P-U",
         "preset": true,
-        "content": "BAS",
+        "content": null,
         "suggestion": true,
         "specification": "B",
         "detailing": "P",
