@@ -12,6 +12,4 @@ For the moment, only the object templates of the object type analog input and it
 
 # License
 
-The data itself are derived from the [AMEV BACtwin](https://www.amev-online.de/AMEVInhalt/Planen/Gebaeudeautomation/BACtwin/) recommendation. These are freely available to everyone.
-
-All other content in this repository is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license unless otherwise noted.
+Unless otherwise noted, this project is licensed under the permissive [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
