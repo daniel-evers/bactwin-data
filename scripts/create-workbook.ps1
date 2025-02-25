@@ -17,7 +17,7 @@ $worksheet.Rows.Font.Size = 10
 $worksheet.Columns(2).Font.Name = "Consolas"
 
 # load template data
-$json = Get-Content '../compilation/objects.json' | ConvertFrom-Json
+$json = Get-Content "$PSScriptRoot/../compilation/objects.json" | ConvertFrom-Json
 
 # initialize row and column index
 $row = 7
@@ -34,6 +34,15 @@ function Set-Cell {
         $cell.Interior.ColorIndex = $colorIndex
     }
     $cell.Value = "$value"
+}
+
+# workaround for missing ternary operator support in PowerShell < version 7
+function Select-Value {
+    param ([int]$condition, $first, $second)
+    if ($condition) {
+        return $first
+    }
+    return $second
 }
 
 # set fixed headings
@@ -109,8 +118,8 @@ foreach ($item in $json.PSObject.Properties) {
             $duties = $property.Value.duty -split "-"
             Set-Cell 2 $column $property.Value.order
             Set-Cell 3 $column $property.Value.conformance
-            Set-Cell 4 $column $duties[0] (0 -eq $duties[0].Length ? 0 : 43)
-            Set-Cell 5 $column $duties[1] (0 -eq $duties[1].Length ? 0 : 43)
+            Set-Cell 4 $column $duties[0] (Select-Value (0 -eq $duties[0].Length) 0 43)
+            Set-Cell 5 $column $duties[0] (Select-Value (0 -eq $duties[1].Length) 0 43)
             Set-Cell 6 $column $duties[2] 43
             if ($property.Value.preset) {
                 Set-Cell 7 $column '!' 44
@@ -127,8 +136,8 @@ foreach ($item in $json.PSObject.Properties) {
         }
 
         # set background color and value
-        $colorIndex = ($property.Value.preset ? 44 : 42)
-        $value = ($property.Value.suggestion ? '[' + $property.Value.content + ']' : $property.Value.content)
+        $colorIndex = Select-Value $property.Value.preset 44 42
+        $value = Select-Value $property.Value.suggestion ('[' + $property.Value.content + ']') $property.Value.content
         Set-Cell $row ($column++) $value $colorIndex
     }
 
