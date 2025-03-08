@@ -13,12 +13,12 @@ For the moment, only the object templates of the object type analog input and it
 # Getting Started
 
 1. Ensure that the following programs are installed on your system in their latest, stable version.
-    * [Powershell](https://docs.microsoft.com/en-us/powershell)
     * [Node.js](https://nodejs.org)
-    * [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
-    * [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (recommended)
     * [Git](https://git-scm.com) (recommended)
-2. Create a working copy of this project if not already done.
+2. To try out the Excel example, you need additionally the following installations.
+    * [Powershell 7+](https://docs.microsoft.com/en-us/powershell)
+    * [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
+3. Create a working copy of this project if not already done.
     * With Git you can just do it by running `git clone https://github.com/daniel-evers/bactwin-data`
 3. Run `npm install` inside of your working copy.
     * Run `npm run compile` to re-create the files of the `compilation` directory. (optional)
