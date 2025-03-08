@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "AMEV BACtwin data in an IT-optimized format",
     "scripts": {
+        "server": "node ./scripts/server",
         "compile": "node ./scripts/compile",
         "create": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/create-workbook.ps1"
     },
@@ -16,6 +17,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "deepmerge": "^4.3.1",
+        "mime": "^4.0.6",
         "yaml": "^2.7.0"
     }
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object template example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', ready)
+    </script>
+</head>
+
+<body>
+    <table id="mainTable" cellpadding="1" cellspacing="0" width="100%">
+        <tr id="mainHeader"></tr>
+    </table>
+    <div>&nbsp;</div>
+    <table id="legendeTable" cellpadding="1" cellspacing="0">
+        <tr>
+            <th style="text-align: left;">Legende</th>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(153 204 0);">* = B (Bauherr/Betreiber), P (GA-Planung), U (Ausführendes
+                Unternehmen)</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(255 204 0);">! = Vorgabewert (Parametrierung) und Prüfwert</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(51 204 204);">? = Prüfwert (systemintern erzeugter Wert)</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(255 204 0);">[] = Vorschlag für einen Vorgabewert</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(51 204 204);">* Kann zur Prüfung beim 1:1 Test verwendet werden</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(255 204 0);">*** gemäß Kapitel 4.4 einrichten</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,5 +1,7 @@
-# SPDX-License-Identifier: Apache-2.0
+﻿# SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 Daniel Evers
+$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+$PSDefaultParameterValues['*:Encoding'] = 'utf8'
 
 # re-compile data (YAML definitions to JSON files)
 npm run compile
@@ -17,7 +19,7 @@ $worksheet.Rows.Font.Size = 10
 $worksheet.Columns(2).Font.Name = "Consolas"
 
 # load template data
-$json = Get-Content "$PSScriptRoot/../compilation/objects.json" | ConvertFrom-Json
+$json = Get-Content "$PSScriptRoot/../compilation/objects.json" -Encoding utf8 | ConvertFrom-Json
 
 # initialize row and column index
 $row = 7
@@ -99,10 +101,10 @@ foreach ($item in $json.PSObject.Properties) {
         }
         $value = $function.Value
         if ($true -eq $function.Value) {
-            $value = '✓'
+            $value = "✓"
         }
         elseif ($false -eq $function.Value) {
-            $value = ''
+            $value = ""
         }
         $worksheet.Columns($column).HorizontalAlignment = -4108 # xlHAlignCenter
         $worksheet.Cells($row, $column++).Value = "$value"

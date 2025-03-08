@@ -1,0 +1,29 @@
+body {
+    font-family: Calibri, sans-serif;
+    font-size: 10pt;
+}
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    white-space: nowrap
+}
+
+#mainTable th {
+    writing-mode: sideways-lr;
+    text-align: left;
+    padding: 2px;
+}
+
+#mainTable td:nth-child(n+11) {
+    text-align: center;
+}
+
+#legendeTable th {
+    writing-mode: horizontal-tb;
+}
